@@ -1,0 +1,15 @@
+package {{PackageName}}
+
+import (
+	"log"
+)
+
+func Create(w http.ResponseWriter, r *http.Request) {
+	log.Printf("[CREATE]({{PackageName}}) r: %#v", r)
+}
+func Update(w http.ResponseWriter, r *http.Request) {
+	log.Printf("[UPDATE]({{PackageName}}) r: %#v", r)
+}
+func Delete(w http.ResponseWriter, r *http.Request) {
+	log.Printf("[DELETE]({{PackageName}}) r: %#v", r)
+}
